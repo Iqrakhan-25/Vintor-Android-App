@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/forgot_password"
+            android:contentDescription="Logo"
+            android:scaleType="centerInside" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/black"
+            android:textSize="25sp"
+            android:fontFamily="@font/agbalumo_regular"
+            android:layout_marginTop="0dp"
+            />
+        <TextView
+            android:id="@+id/forgotDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Drop your email and we’ll send you a reset link."
+            android:textColor="#707070"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/aleo_regular"
+            android:gravity="center" />
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:errorEnabled="true"
+            android:id="@+id/emailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email"
+            android:textColorHint="#B74E4949"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/aleo_regular"
+            app:boxStrokeColor="#6A1B9A"
+            app:hintTextColor="#6A1B9A"
+            app:boxBackgroundColor="#F8F8F8">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/aleo_regular" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendResetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Send Reset Link"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/agbalumo_regular"
+            android:textSize="18sp"
+            android:background="@drawable/btn_gradient"
+            app:backgroundTint="@null" />
+        <TextView
+            android:id="@+id/backToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/agbalumo_regular"
+            android:minHeight="48dp"
+            android:text="Back to Login"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

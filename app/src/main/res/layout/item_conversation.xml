@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:padding="8dp">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="12dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_avatar"
+        app:shapeAppearanceOverlay="@style/CircularImage"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginLeft="6dp"
+        app:layout_constraintStart_toEndOf="@id/imageViewProfile"
+        app:layout_constraintTop_toTopOf="@id/imageViewProfile"
+        app:layout_constraintEnd_toStartOf="@id/textViewLastSeenOrOnline" />
+    <TextView
+        android:id="@+id/textViewLastMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Last message preview here"
+        android:textSize="14sp"
+        android:layout_marginLeft="6dp"
+        android:textColor="#666"
+        android:maxLines="1"
+        android:ellipsize="end"
+        app:layout_constraintStart_toStartOf="@id/textViewUserName"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserName"
+        app:layout_constraintEnd_toStartOf="@id/textViewUnreadCount" />
+    <TextView
+        android:id="@+id/textViewLastSeenOrOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online"
+        android:textSize="12sp"
+        android:textColor="#4CAF50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/textViewUserName" />
+    <TextView
+        android:id="@+id/textViewUnreadCount"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@color/pink"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/textViewLastMessage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

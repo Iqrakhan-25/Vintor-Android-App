@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@android:color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <ImageView
+            android:id="@+id/vintorLogo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Vintor Logo"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:textColor="#232020"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/agbalumo_regular" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue to Vintor Social"
+            android:textColor="#DD2A7B"
+            android:textSize="16sp"
+            android:layout_marginTop="1dp"
+            android:fontFamily="@font/agbalumo_regular"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Username -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/usernameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email"
+            android:textColorHint="#B74E4949"
+            android:fontFamily="@font/aleo_regular"
+            app:boxStrokeColor="@drawable/custom_textinputbox_stroke"
+            app:hintTextColor="@drawable/custom_textinputbox_stroke"
+            app:boxBackgroundColor="#F8F8F8">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/UsernameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/aleo_regular" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <!-- Password Field -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Password"
+            app:endIconMode="custom"
+            app:endIconDrawable="@drawable/eye_close"
+            app:endIconTint="#B74E4949"
+            android:textColorHint="#B74E4949"
+            android:fontFamily="@font/aleo_regular"
+            app:boxStrokeColor="@drawable/custom_textinputbox_stroke"
+            app:hintTextColor="@drawable/custom_textinputbox_stroke"
+            app:boxBackgroundColor="#F8F8F8">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/PasswordET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                android:fontFamily="@font/aleo_regular" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <!-- Remember + Forgot -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="0dp"
+            android:gravity="center_vertical">
+
+            <CheckBox
+                android:id="@+id/rememberMeCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="Remember Me"
+                android:textColor="#070707"
+                android:fontFamily="@font/aleo_regular" />
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:text="Forgot Password?"
+                android:textColor="#DD2A7B"
+                android:textSize="14sp"
+                android:fontFamily="@font/agbalumo_regular" />
+        </LinearLayout>
+
+        <!-- Login Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="24dp"
+            android:text="Login"
+            android:fontFamily="@font/agbalumo_regular"
+            android:textStyle="italic"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:background="@drawable/btn_gradient"
+            app:backgroundTint="@null" />
+
+        <!-- Sign Up Row -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to Vintor?"
+                android:textColor="#0F0E0E"
+                android:fontFamily="@font/agbalumo_regular"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/signupLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Sign Up"
+                android:textColor="#DD2A7B"
+                android:fontFamily="@font/agbalumo_regular"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

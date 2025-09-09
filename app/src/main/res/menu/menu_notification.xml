@@ -1,0 +1,16 @@
+<!-- res/menu/menu_notification.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_mark_read"
+        android:title="Mark as Read"
+        android:icon="@android:drawable/ic_menu_view"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_delete"
+        android:title="Delete"
+        android:icon="@android:drawable/ic_menu_delete"
+        app:showAsAction="never" />
+</menu>
+

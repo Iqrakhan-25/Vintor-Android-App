@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Face background -->
+    <path
+        android:fillColor="#F6F4F5"
+        android:pathData="M4,6h16a2,2 0 0 1 2,2v8a2,2 0 0 1 -2,2H4a2,2 0 0 1 -2,-2V8a2,2 0 0 1 2,-2z" />
+
+    <!-- Left eye shifted slightly right -->
+    <path
+        android:fillColor="#0B0B0B"
+        android:pathData="M9.5,12
+                          C9.5,12.7 9,13.2 8.3,13.2
+                          C7.6,13.2 7.1,12.7 7.1,12
+                          C7.1,11.3 7.6,10.8 8.3,10.8
+                          C9,10.8 9.5,11.3 9.5,12
+                          Z" />
+
+    <!-- Right eye shifted slightly left -->
+    <path
+        android:fillColor="#141313"
+        android:pathData="M16.5,12
+                          C16.5,12.7 16,13.2 15.3,13.2
+                          C14.6,13.2 14.1,12.7 14.1,12
+                          C14.1,11.3 14.6,10.8 15.3,10.8
+                          C16,10.8 16.5,11.3 16.5,12
+                          Z" />
+
+    <!-- Mouth as thin straight line -->
+    <path
+        android:strokeColor="#101010"
+        android:strokeWidth="1"
+        android:strokeLineCap="round"
+        android:pathData="M8,16h8" />
+
+    <!-- Antenna -->
+    <path
+        android:strokeColor="#0B0B0B"
+        android:strokeWidth="2"
+        android:strokeLineCap="round"
+        android:pathData="M12,4v4" />
+
+    <!-- Antenna tip -->
+    <circle
+        android:fillColor="#0E0E0F"
+        android:centerX="12"
+        android:centerY="4"
+        android:radius="1dp" />
+</vector>

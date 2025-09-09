@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#6A1B9A</color>
+    <color name="purpleish">#D3AAED</color>
+    <color name="nav_unselected">#AA808080</color>
+    <color name="gray">#AA808080</color>
+    <color name="darker_gray">#AA808080</color>
+    <color name="red">#AA851414</color>
+    <color name="dark_red">#D32F2F</color>
+    <color name="pink">#DD2A7B</color>
+    <color name="Pink">#E04E8F</color>
+    <color name="baby_Pink">#EFC0CD</color>
+</resources>

@@ -1,0 +1,72 @@
+[versions]
+agp = "8.8.1"
+androidxCoreKtx = "1.10.1"
+appcompatVersion = "1.6.1"
+firebaseAuthVersion = "22.3.0"
+firebaseFirestoreKtxVersion = "24.11.0"
+firebaseFirestoreVersion = "24.11.0"
+githubGlideVersion = "4.16.0"
+googlePlayServicesCastFramework = "21.4.0"
+imagepicker = "2.1"
+imagepickerVersion = "2.1.1"
+kotlin = "1.9.0"
+coreKtx = "1.16.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.1"
+material = "1.12.0"
+activity = "1.10.1"
+constraintlayout = "2.2.1"
+annotation = "1.9.1"
+googleGmsGoogleServices = "4.4.3"
+firebaseAuth = "24.0.0"
+firebaseFirestoreKtx = "26.0.0"
+firebaseFirestore = "26.0.0"
+materialVersion = "1.9.0"
+firebaseAuthKtx = "24.0.0"
+playServicesCastFramework = "22.1.0"
+recyclerview = "1.3.2"
+swiperefreshlayout = "1.1.0"
+navigationRuntimeAndroid = "2.9.3"
+firebaseCrashlyticsBuildtools = "3.0.5"
+supportAnnotations = "28.0.0"
+
+[libraries]
+androidx-appcompat-v161 = { module = "androidx.appcompat:appcompat", version.ref = "appcompatVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-recyclerview = { module = "androidx.recyclerview:recyclerview", version.ref = "recyclerview" }
+com-github-bumptech-glide-glide2 = { module = "com.github.bumptech.glide:glide", version.ref = "githubGlideVersion" }
+compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "githubGlideVersion" }
+core-ktx-v1101 = { module = "androidx.core:core-ktx", version.ref = "androidxCoreKtx" }
+firebase-auth-v2230 = { module = "com.google.firebase:firebase-auth", version.ref = "firebaseAuthVersion" }
+firebase-firestore-ktx-v24110 = { module = "com.google.firebase:firebase-firestore-ktx", version.ref = "firebaseFirestoreKtxVersion" }
+firebase-firestore-v24110 = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestoreVersion" }
+imagepicker = { module = "com.github.dhaval2404:imagepicker", version.ref = "imagepicker" }
+imagepicker-v211 = { module = "com.github.dhaval2404:imagepicker", version.ref = "imagepickerVersion" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+androidx-activity = { group = "androidx.activity", name = "activity", version.ref = "activity" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+androidx-annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+firebase-auth = { group = "com.google.firebase", name = "firebase-auth", version.ref = "firebaseAuth" }
+firebase-firestore-ktx = { group = "com.google.firebase", name = "firebase-firestore-ktx", version.ref = "firebaseFirestoreKtx" }
+firebase-firestore = { group = "com.google.firebase", name = "firebase-firestore", version.ref = "firebaseFirestore" }
+material-v190 = { module = "com.google.android.material:material", version.ref = "materialVersion" }
+firebase-auth-ktx = { group = "com.google.firebase", name = "firebase-auth-ktx", version.ref = "firebaseAuthKtx" }
+play-services-cast-framework = { group = "com.google.android.gms", name = "play-services-cast-framework", version.ref = "playServicesCastFramework" }
+play-services-cast-framework-v2140 = { module = "com.google.android.gms:play-services-cast-framework", version.ref = "googlePlayServicesCastFramework" }
+androidx-swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "swiperefreshlayout" }
+androidx-navigation-runtime-android = { group = "androidx.navigation", name = "navigation-runtime-android", version.ref = "navigationRuntimeAndroid" }
+firebase-crashlytics-buildtools = { group = "com.google.firebase", name = "firebase-crashlytics-buildtools", version.ref = "firebaseCrashlyticsBuildtools" }
+support-annotations = { group = "com.android.support", name = "support-annotations", version.ref = "supportAnnotations" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-parcelize = { id = "kotlin-parcelize", version.ref = "kotlin" }
+google-gms-google-services = { id = "com.google.gms.google-services", version.ref = "googleGmsGoogleServices" }
+

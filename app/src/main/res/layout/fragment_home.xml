@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/homeSwipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:background="@android:color/white">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/homeSearchLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search users..."
+                android:fontFamily="@font/aleo_regular"
+                android:layout_marginBottom="12dp"
+                app:startIconTint="@color/black"
+                app:boxCornerRadiusTopStart="20dp"
+                app:boxCornerRadiusTopEnd="20dp"
+                app:boxCornerRadiusBottomStart="20dp"
+                app:boxCornerRadiusBottomEnd="20dp"
+                app:boxBackgroundColor="#F7F7F7"
+                app:boxStrokeColor="@color/purple"
+                app:boxStrokeWidth="2dp">
+
+                <AutoCompleteTextView
+                    android:id="@+id/homeEtSearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:completionThreshold="1"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeRecyclerViewUsers"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp"
+                android:overScrollMode="never"
+                android:nestedScrollingEnabled="false"
+                android:visibility="gone" />
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/homeShimmerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:shimmer_auto_start="true"
+                android:visibility="gone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="12dp"
+                        android:background="#E0E0E0" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:background="#E0E0E0" />
+                </LinearLayout>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeRecyclerViewPosts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="80dp"
+                android:overScrollMode="never"
+                android:scrollbars="vertical"
+                android:nestedScrollingEnabled="false" />
+            <TextView
+                android:id="@+id/emptyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No posts available"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:visibility="gone"
+                android:textColor="@android:color/darker_gray"
+                android:padding="16dp"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

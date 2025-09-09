@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipeRefreshLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/profileDp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:scaleType="centerCrop"
+                android:layout_gravity="center"
+                android:elevation="5dp"
+                android:layout_marginTop="15dp"
+                app:shapeAppearanceOverlay="@style/CircularImage"
+              />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profileNameLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                app:boxStrokeColor="#6A1B9A"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginBottom="6dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="16sp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:inputType="textPersonName"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Bio -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profileBioLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Bio"
+                app:boxStrokeColor="#6A1B9A"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginBottom="6dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profileBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="16sp"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Email (readonly) -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profileEmailLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                app:boxStrokeColor="#6A1B9A"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginBottom="6dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profileEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="16sp"
+                    android:inputType="textEmailAddress"
+                    android:focusable="false"
+                    android:clickable="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Phone -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/profilePhoneLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number"
+                app:boxStrokeColor="#6A1B9A"
+                app:boxStrokeWidthFocused="2dp"
+                android:layout_marginBottom="6dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/profilePhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="16sp"
+                    android:inputType="phone"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- DOB & City -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="8dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profileDobLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="DOB"
+                    app:boxStrokeColor="#6A1B9A"
+                    app:boxStrokeWidthFocused="2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profileDob"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:textColor="?android:attr/textColorPrimary"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/profileCityLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="City"
+                    app:boxStrokeColor="#6A1B9A"
+                    app:boxStrokeWidthFocused="2dp"
+                    android:layout_marginStart="6dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/profileCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:textColor="?android:attr/textColorPrimary"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!-- Followers/Following/Posts/Likes -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left"
+                android:weightSum="4"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/followersCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0\nFollowers"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/followingCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0\nFollowing"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/postsCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0\nPosts"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/likesCount"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="0\nLikes"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="14sp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnYourPosts"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="My Posts"
+                    android:backgroundTint="@color/Pink"
+                    android:textColor="@android:color/white"
+                    style="@style/Widget.MaterialComponents.Button" />
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/saveProfileBtn"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.Button"
+                    android:text="Save Details"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="@color/Pink"
+                    android:textColor="@android:color/white"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
